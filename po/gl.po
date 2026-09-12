@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sane-backends\n"
 "Report-Msgid-Bugs-To: sane-devel@alioth-lists.debian.net\n"
-"POT-Creation-Date: 2025-04-28 10:20-0700\n"
+"POT-Creation-Date: 2026-08-17 15:32-0400\n"
 "PO-Revision-Date: 2009-06-25 10:22+0100\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -32,7 +32,7 @@ msgstr "Estándar"
 
 #: include/sane/saneopts.h:160 backend/artec_eplus48u.c:2873
 #: backend/canon_lide70.c:416 backend/epson.c:3296 backend/epson2.c:1281
-#: backend/epsonds.c:1978 backend/genesys/genesys.cpp:4594
+#: backend/epsonds.c:1981 backend/genesys/genesys.cpp:4622
 #: backend/gt68xx.c:694 backend/hp-option.c:3295 backend/hp3500.c:1017
 #: backend/kvs1025_opt.c:639 backend/kvs20xx_opt.c:285
 #: backend/kvs40xx_opt.c:501 backend/leo.c:820 backend/lexmark.c:197
@@ -48,7 +48,7 @@ msgid "Geometry"
 msgstr "Xeometría"
 
 #: include/sane/saneopts.h:161 backend/artec_eplus48u.c:2794
-#: backend/canon.c:1507 backend/genesys/genesys.cpp:4637
+#: backend/canon.c:1507 backend/genesys/genesys.cpp:4665
 #: backend/gt68xx.c:663 backend/hp-option.c:2951 backend/kvs1025_opt.c:703
 #: backend/leo.c:868 backend/ma1509.c:597 backend/matsushita.c:1186
 #: backend/microtek2.h:598 backend/mustek.c:4400 backend/mustek_usb.c:347
@@ -1222,22 +1222,22 @@ msgstr ""
 msgid "Lightbox option is detected as installed."
 msgstr ""
 
-#: backend/avision.h:897
+#: backend/avision.h:900
 #, no-c-format
 msgid "Number of the frame to scan"
 msgstr "Número de mostra a escanear"
 
-#: backend/avision.h:898
+#: backend/avision.h:901
 #, no-c-format
 msgid "Selects the number of the frame to scan"
 msgstr "Escolle o número de mostra a escanear"
 
-#: backend/avision.h:901
+#: backend/avision.h:904
 #, no-c-format
 msgid "Duplex scan"
 msgstr "Escaneo dúplex"
 
-#: backend/avision.h:902
+#: backend/avision.h:905
 #, fuzzy, no-c-format
 msgid ""
 "Duplex scan provides a scan of the front and back side of the document"
@@ -1477,7 +1477,7 @@ msgstr "escáner de filmes"
 msgid "flatbed scanner"
 msgstr "escáner plano"
 
-#: backend/canon.c:1192 backend/epson.c:3384 backend/epson2.c:1388
+#: backend/canon.c:1192 backend/epson.c:3384 backend/epson2.c:1386
 #, no-c-format
 msgid "Film type"
 msgstr "Tipo de filme"
@@ -1746,13 +1746,13 @@ msgstr "Corrección gamma"
 msgid "Selects the gamma corrected transfer curve"
 msgstr "Selecciona a curva de transferencia da corrección gamma"
 
-#: backend/canon_dr.c:437 backend/epjitsu.c:241 backend/epson.c:499
+#: backend/canon_dr.c:442 backend/epjitsu.c:240 backend/epson.c:499
 #: backend/epson2-ops.c:101 backend/epson2.c:111 backend/epsonds-ops.c:31
-#: backend/epsonds.c:1326 backend/epsonds.h:65 backend/epsonds.h:69
+#: backend/epsonds.c:1341 backend/epsonds.h:71 backend/epsonds.h:75
 #: backend/fujitsu.c:690 backend/genesys/genesys.h:55 backend/gt68xx.c:146
 #: backend/hp3900_sane.c:417 backend/hp3900_sane.c:426
 #: backend/hp3900_sane.c:1016 backend/hp5590.c:90 backend/kodakaio.c:617
-#: backend/ma1509.c:106 backend/magicolor.c:196 backend/mustek.c:154
+#: backend/ma1509.c:106 backend/magicolor.c:224 backend/mustek.c:154
 #: backend/mustek.c:158 backend/mustek.c:162 backend/pixma/pixma.c:1026
 #: backend/pixma/pixma_sane_options.c:93 backend/snapscan-options.c:86
 #: backend/test.c:232 backend/umax.c:179
@@ -1760,42 +1760,42 @@ msgstr "Selecciona a curva de transferencia da corrección gamma"
 msgid "Flatbed"
 msgstr "Plano"
 
-#: backend/canon_dr.c:438 backend/epjitsu.c:242 backend/epsonds-ops.c:32
-#: backend/epsonds.c:1327 backend/epsonds.h:70 backend/fujitsu.c:691
+#: backend/canon_dr.c:443 backend/epjitsu.c:241 backend/epsonds-ops.c:32
+#: backend/epsonds.c:1342 backend/epsonds.h:76 backend/fujitsu.c:691
 #: backend/kodak.c:138
 #, fuzzy, no-c-format
 msgid "ADF Front"
 msgstr "A tapa do alimentador está aberta"
 
-#: backend/canon_dr.c:439 backend/epjitsu.c:243 backend/fujitsu.c:692
+#: backend/canon_dr.c:444 backend/epjitsu.c:242 backend/fujitsu.c:692
 #: backend/kodak.c:139
 #, fuzzy, no-c-format
 msgid "ADF Back"
 msgstr "Atoamento no alimentador"
 
-#: backend/canon_dr.c:440 backend/epjitsu.c:244 backend/epsonds-ops.c:33
-#: backend/epsonds.c:1328 backend/epsonds.h:71 backend/fujitsu.c:693
+#: backend/canon_dr.c:445 backend/epjitsu.c:243 backend/epsonds-ops.c:33
+#: backend/epsonds.c:1343 backend/epsonds.h:77 backend/fujitsu.c:693
 #: backend/hp5590.c:92 backend/kodak.c:140 backend/pixma/pixma.c:1037
 #, no-c-format
 msgid "ADF Duplex"
 msgstr "Alimentador dúplex"
 
-#: backend/canon_dr.c:441 backend/fujitsu.c:694
+#: backend/canon_dr.c:446 backend/fujitsu.c:694
 #, fuzzy, no-c-format
 msgid "Card Front"
 msgstr "Imprimir"
 
-#: backend/canon_dr.c:442 backend/fujitsu.c:695
+#: backend/canon_dr.c:447 backend/fujitsu.c:695
 #, no-c-format
 msgid "Card Back"
 msgstr ""
 
-#: backend/canon_dr.c:443 backend/fujitsu.c:696
+#: backend/canon_dr.c:448 backend/fujitsu.c:696
 #, fuzzy, no-c-format
 msgid "Card Duplex"
 msgstr "Duas caras"
 
-#: backend/canon_dr.c:450 backend/epson.c:597 backend/epson.c:3094
+#: backend/canon_dr.c:455 backend/epson.c:597 backend/epson.c:3094
 #: backend/epson2.c:191 backend/fujitsu.c:713
 #: backend/genesys/genesys.cpp:96 backend/genesys/genesys.cpp:103
 #: backend/gt68xx_low.h:134 backend/hp-option.c:3091
@@ -1803,7 +1803,7 @@ msgstr "Duas caras"
 msgid "Red"
 msgstr "Vermello"
 
-#: backend/canon_dr.c:451 backend/epson.c:598 backend/epson.c:3090
+#: backend/canon_dr.c:456 backend/epson.c:598 backend/epson.c:3090
 #: backend/epson2.c:192 backend/fujitsu.c:714
 #: backend/genesys/genesys.cpp:97 backend/genesys/genesys.cpp:104
 #: backend/gt68xx_low.h:135 backend/hp-option.c:3092
@@ -1811,7 +1811,7 @@ msgstr "Vermello"
 msgid "Green"
 msgstr "Verde"
 
-#: backend/canon_dr.c:452 backend/epson.c:599 backend/epson.c:3098
+#: backend/canon_dr.c:457 backend/epson.c:599 backend/epson.c:3098
 #: backend/epson2.c:193 backend/fujitsu.c:715
 #: backend/genesys/genesys.cpp:98 backend/genesys/genesys.cpp:105
 #: backend/gt68xx_low.h:136 backend/hp-option.c:3093
@@ -1819,22 +1819,22 @@ msgstr "Verde"
 msgid "Blue"
 msgstr "Azul"
 
-#: backend/canon_dr.c:453
+#: backend/canon_dr.c:458
 #, fuzzy, no-c-format
 msgid "Enhance Red"
 msgstr "Optimización"
 
-#: backend/canon_dr.c:454
+#: backend/canon_dr.c:459
 #, fuzzy, no-c-format
 msgid "Enhance Green"
 msgstr "Optimización"
 
-#: backend/canon_dr.c:455
+#: backend/canon_dr.c:460
 #, fuzzy, no-c-format
 msgid "Enhance Blue"
 msgstr "Optimización"
 
-#: backend/canon_dr.c:457 backend/epson.c:554 backend/epson.c:562
+#: backend/canon_dr.c:462 backend/epson.c:554 backend/epson.c:562
 #: backend/epson.c:574 backend/epson.c:596 backend/epson2.c:155
 #: backend/epson2.c:163 backend/epson2.c:175 backend/epson2.c:190
 #: backend/epson2.c:204 backend/fujitsu.c:719
@@ -1846,58 +1846,58 @@ msgstr "Optimización"
 msgid "None"
 msgstr "Ningún"
 
-#: backend/canon_dr.c:458 backend/fujitsu.c:720
+#: backend/canon_dr.c:463 backend/fujitsu.c:720
 #, no-c-format
 msgid "JPEG"
 msgstr ""
 
-#: backend/canon_dr.c:460
+#: backend/canon_dr.c:465
 #, no-c-format
 msgid "8x12"
 msgstr ""
 
-#: backend/canon_dr.c:461
+#: backend/canon_dr.c:466
 #, no-c-format
 msgid "12x12"
 msgstr ""
 
-#: backend/canon_dr.c:463
+#: backend/canon_dr.c:468
 #, fuzzy, no-c-format
 msgid "Black-on-White"
 msgstr "Branco e negro"
 
-#: backend/canon_dr.c:464
+#: backend/canon_dr.c:469
 #, no-c-format
 msgid "Black-on-Image"
 msgstr ""
 
-#: backend/canon_dr.c:465
+#: backend/canon_dr.c:470
 #, no-c-format
 msgid "White-on-Black"
 msgstr ""
 
-#: backend/canon_dr.c:2790 backend/fujitsu.c:4144 backend/kvs1025_opt.c:910
+#: backend/canon_dr.c:2845 backend/fujitsu.c:4144 backend/kvs1025_opt.c:910
 #, no-c-format
 msgid "Software blank skip percentage"
 msgstr ""
 
-#: backend/canon_dr.c:2791 backend/fujitsu.c:4145
+#: backend/canon_dr.c:2846 backend/fujitsu.c:4145
 #, no-c-format
 msgid "Request driver to discard pages with low percentage of dark pixels"
 msgstr ""
 
-#: backend/canon_dr.c:2910
+#: backend/canon_dr.c:2965
 #, fuzzy, no-c-format
 msgid "Imprinter Options"
 msgstr "Imprimir as opcións"
 
-#: backend/canon_dr.c:2911
+#: backend/canon_dr.c:2966
 #, no-c-format
 msgid "Controls for imprinter units"
 msgstr ""
 
 #: backend/canon_lide70.c:342 backend/epson.c:2811 backend/epson2.c:967
-#: backend/genesys/genesys.cpp:4525 backend/gt68xx.c:449
+#: backend/genesys/genesys.cpp:4537 backend/gt68xx.c:449
 #: backend/hp-option.c:2912 backend/kvs1025_opt.c:521
 #: backend/kvs20xx_opt.c:171 backend/kvs40xx_opt.c:315 backend/ma1509.c:499
 #: backend/matsushita.c:1081 backend/microtek2.h:596 backend/mustek.c:4194
@@ -1922,26 +1922,26 @@ msgstr ""
 "Usar unha E/S non bloqueante para sane_red() se o permite a interface."
 
 #: backend/epson.c:489 backend/epson2.c:104 backend/kodakaio.c:611
-#: backend/magicolor.c:189
+#: backend/magicolor.c:217
 #, no-c-format
 msgid "Simplex"
 msgstr "Unha cara"
 
 #: backend/epson.c:490 backend/epson2.c:105 backend/kodakaio.c:612
 #: backend/kvs1025.h:50 backend/kvs20xx_opt.c:204 backend/kvs40xx_opt.c:348
-#: backend/magicolor.c:190 backend/matsushita.h:212
+#: backend/magicolor.c:218 backend/matsushita.h:212
 #, no-c-format
 msgid "Duplex"
 msgstr "Duas caras"
 
 #: backend/epson.c:500 backend/epson2-ops.c:102 backend/epson2.c:112
-#: backend/epsonds.h:66 backend/pixma/pixma.c:1043
+#: backend/epsonds.h:72 backend/pixma/pixma.c:1043
 #, no-c-format
 msgid "Transparency Unit"
 msgstr "Unidade de transparencias"
 
 #: backend/epson.c:501 backend/epson2-ops.c:104 backend/epson2.c:114
-#: backend/epsonds.h:67 backend/kodakaio.c:618 backend/magicolor.c:197
+#: backend/epsonds.h:73 backend/kodakaio.c:618 backend/magicolor.c:225
 #: backend/mustek.c:158 backend/pixma/pixma.c:1031 backend/test.c:232
 #: backend/umax.c:181
 #, no-c-format
@@ -2281,49 +2281,49 @@ msgstr "Define o factor de zoom que vai usar o escáner"
 msgid "Quick format"
 msgstr "Formato rápido"
 
-#: backend/epson.c:3358 backend/epson2.c:1364 backend/epsonds.c:2028
+#: backend/epson.c:3358 backend/epson2.c:1364 backend/epsonds.c:2031
 #, no-c-format
 msgid "Optional equipment"
 msgstr "Equipamento opcional"
 
-#: backend/epson.c:3429 backend/epson2.c:1401 backend/epsonds.c:2044
+#: backend/epson.c:3429 backend/epson2.c:1399 backend/epsonds.c:2047
 #, no-c-format
 msgid "Eject"
 msgstr "Expulsar"
 
-#: backend/epson.c:3430 backend/epson2.c:1402 backend/epsonds.c:2045
+#: backend/epson.c:3430 backend/epson2.c:1400 backend/epsonds.c:2048
 #, no-c-format
 msgid "Eject the sheet in the ADF"
 msgstr "Expulsar a folla do alimentador"
 
-#: backend/epson.c:3442 backend/epson2.c:1412
+#: backend/epson.c:3442 backend/epson2.c:1410
 #, no-c-format
 msgid "Auto eject"
 msgstr "Expulsión automática"
 
-#: backend/epson.c:3443 backend/epson2.c:1414
+#: backend/epson.c:3443 backend/epson2.c:1412
 #, no-c-format
 msgid "Eject document after scanning"
 msgstr "Expulsar o documento despois do escaneo"
 
-#: backend/epson.c:3455 backend/epson2.c:1424 backend/kodakaio.c:2857
-#: backend/magicolor.c:2497
+#: backend/epson.c:3455 backend/epson2.c:1422 backend/kodakaio.c:2864
+#: backend/magicolor.c:2551
 #, no-c-format
 msgid "ADF Mode"
 msgstr "Modo alimentador"
 
-#: backend/epson.c:3457 backend/epson2.c:1426 backend/kodakaio.c:2859
-#: backend/magicolor.c:2499
+#: backend/epson.c:3457 backend/epson2.c:1424 backend/kodakaio.c:2866
+#: backend/magicolor.c:2553
 #, no-c-format
 msgid "Selects the ADF mode (simplex/duplex)"
 msgstr "Escoller o modo do alimentador (unha cara/duas caras)"
 
-#: backend/epson.c:3471 backend/epson2.c:1438
+#: backend/epson.c:3471 backend/epson2.c:1436
 #, no-c-format
 msgid "Bay"
 msgstr "Badía"
 
-#: backend/epson.c:3472 backend/epson2.c:1439
+#: backend/epson.c:3472 backend/epson2.c:1437
 #, no-c-format
 msgid "Select bay to scan"
 msgstr "Escolla a badía para escanear"
@@ -2395,32 +2395,32 @@ msgstr ""
 msgid "User defined CCT profile"
 msgstr "Definida polo usuario"
 
-#: backend/epsonds.c:2052
+#: backend/epsonds.c:2055
 #, no-c-format
 msgid "Load"
 msgstr ""
 
-#: backend/epsonds.c:2053
+#: backend/epsonds.c:2056
 #, fuzzy, no-c-format
 msgid "Load a sheet in the ADF"
 msgstr "Expulsar a folla do alimentador"
 
-#: backend/epsonds.c:2061
+#: backend/epsonds.c:2064
 #, fuzzy, no-c-format
 msgid "ADF Skew Correction"
 msgstr "Sen corrección"
 
-#: backend/epsonds.c:2063
+#: backend/epsonds.c:2066
 #, fuzzy, no-c-format
 msgid "Enables ADF skew correction"
 msgstr "Desactivar a corrección gamma"
 
-#: backend/epsonds.c:2069
+#: backend/epsonds.c:2072
 #, fuzzy, no-c-format
 msgid "ADF CRP Correction"
 msgstr "Sen corrección"
 
-#: backend/epsonds.c:2071
+#: backend/epsonds.c:2074
 #, fuzzy, no-c-format
 msgid "Enables ADF auto cropping"
 msgstr "Desactivar a corrección gamma"
@@ -3316,50 +3316,50 @@ msgstr "Control de densidade"
 msgid "Duplex switch"
 msgstr "Escaneo dúplex"
 
-#: backend/genesys/genesys.cpp:4714 backend/pixma/pixma_sane_options.c:357
+#: backend/genesys/genesys.cpp:4742 backend/pixma/pixma_sane_options.c:357
 #, no-c-format
 msgid "Extras"
 msgstr "Extras"
 
-#: backend/genesys/genesys.cpp:4723
+#: backend/genesys/genesys.cpp:4751
 #, fuzzy, no-c-format
 msgid "Color filter"
 msgstr "Filtro de cor"
 
-#: backend/genesys/genesys.cpp:4726
+#: backend/genesys/genesys.cpp:4754
 #, no-c-format
 msgid "When using gray or lineart this option selects the used color."
 msgstr ""
 "Cando se usa gris ou liña de arte esta opción selecciona a cor a usar."
 
-#: backend/genesys/genesys.cpp:4750
+#: backend/genesys/genesys.cpp:4778
 #, fuzzy, no-c-format
 msgid "Calibration file"
 msgstr "Calibración"
 
-#: backend/genesys/genesys.cpp:4751
+#: backend/genesys/genesys.cpp:4779
 #, fuzzy, no-c-format
 msgid "Specify the calibration file to use"
 msgstr "Definir o modo de calibración"
 
-#: backend/genesys/genesys.cpp:4768
+#: backend/genesys/genesys.cpp:4796
 #, fuzzy, no-c-format
 msgid "Calibration cache expiration time"
 msgstr "Caché de datos de calibración"
 
-#: backend/genesys/genesys.cpp:4769
+#: backend/genesys/genesys.cpp:4797
 #, no-c-format
 msgid ""
 "Time (in minutes) before a cached calibration expires. A value of 0 "
 "means cache is not used. A negative value means cache never expires."
 msgstr ""
 
-#: backend/genesys/genesys.cpp:4779
+#: backend/genesys/genesys.cpp:4807
 #, no-c-format
 msgid "Lamp off time"
 msgstr "Tempo para apagado da lámpada"
 
-#: backend/genesys/genesys.cpp:4782
+#: backend/genesys/genesys.cpp:4810
 #, no-c-format
 msgid ""
 "The lamp will be turned off after the given time (in minutes). A value "
@@ -3368,116 +3368,116 @@ msgstr ""
 "A lámpada vai ser apagada despois do tempo indicado (en minutos). Un "
 "valor de 0 significa que a lámpada no vai ser apagada."
 
-#: backend/genesys/genesys.cpp:4792
+#: backend/genesys/genesys.cpp:4820
 #, fuzzy, no-c-format
 msgid "Lamp off during scan"
 msgstr "Apagar a lámpada durante a calibración de escuridade"
 
-#: backend/genesys/genesys.cpp:4793
+#: backend/genesys/genesys.cpp:4821
 #, fuzzy, no-c-format
 msgid "The lamp will be turned off during scan. "
 msgstr "Minutos que tardará a lámpada en apagarse despois do escaneo"
 
-#: backend/genesys/genesys.cpp:4820 backend/genesys/genesys.cpp:4821
+#: backend/genesys/genesys.cpp:4848 backend/genesys/genesys.cpp:4849
 #, no-c-format
 msgid "File button"
 msgstr "Botón de ficheiro"
 
-#: backend/genesys/genesys.cpp:4865 backend/genesys/genesys.cpp:4866
+#: backend/genesys/genesys.cpp:4893 backend/genesys/genesys.cpp:4894
 #, no-c-format
 msgid "OCR button"
 msgstr "Botón de OCR"
 
-#: backend/genesys/genesys.cpp:4877 backend/genesys/genesys.cpp:4878
+#: backend/genesys/genesys.cpp:4905 backend/genesys/genesys.cpp:4906
 #, no-c-format
 msgid "Power button"
 msgstr "Botón de enerxía"
 
-#: backend/genesys/genesys.cpp:4889 backend/genesys/genesys.cpp:4890
+#: backend/genesys/genesys.cpp:4917 backend/genesys/genesys.cpp:4918
 #, fuzzy, no-c-format
 msgid "Extra button"
 msgstr "Botón de correo-e"
 
-#: backend/genesys/genesys.cpp:4901 backend/genesys/genesys.cpp:4902
+#: backend/genesys/genesys.cpp:4929 backend/genesys/genesys.cpp:4930
 #, fuzzy, no-c-format
 msgid "Transparency button"
 msgstr "Unidade de transparencias"
 
-#: backend/genesys/genesys.cpp:4913 backend/genesys/genesys.cpp:4914
+#: backend/genesys/genesys.cpp:4941 backend/genesys/genesys.cpp:4942
 #, fuzzy, no-c-format
 msgid "PDF function button 1"
 msgstr "Botón de PDF"
 
-#: backend/genesys/genesys.cpp:4925 backend/genesys/genesys.cpp:4926
+#: backend/genesys/genesys.cpp:4953 backend/genesys/genesys.cpp:4954
 #, fuzzy, no-c-format
 msgid "PDF function button 2"
 msgstr "Botón de PDF"
 
-#: backend/genesys/genesys.cpp:4937 backend/genesys/genesys.cpp:4938
+#: backend/genesys/genesys.cpp:4965 backend/genesys/genesys.cpp:4966
 #, fuzzy, no-c-format
 msgid "PDF function button 3"
 msgstr "Botón de PDF"
 
-#: backend/genesys/genesys.cpp:4949 backend/genesys/genesys.cpp:4950
+#: backend/genesys/genesys.cpp:4977 backend/genesys/genesys.cpp:4978
 #, fuzzy, no-c-format
 msgid "PDF function button 4"
 msgstr "Botón de PDF"
 
-#: backend/genesys/genesys.cpp:4961 backend/gt68xx.c:753
+#: backend/genesys/genesys.cpp:4989 backend/gt68xx.c:753
 #, fuzzy, no-c-format
 msgid "Needs calibration"
 msgstr "Limpar a calibración"
 
-#: backend/genesys/genesys.cpp:4962 backend/gt68xx.c:754 backend/p5.c:1928
+#: backend/genesys/genesys.cpp:4990 backend/gt68xx.c:754 backend/p5.c:1928
 #, fuzzy, no-c-format
 msgid "The scanner needs calibration for the current settings"
 msgstr "Forza a calibrar o escáner antes de facer o escaneo"
 
-#: backend/genesys/genesys.cpp:4973 backend/gt68xx.c:778
+#: backend/genesys/genesys.cpp:5001 backend/gt68xx.c:778
 #: backend/gt68xx.c:779 backend/p5.c:1937 backend/p5.c:1938
 #: backend/pixma/pixma_sane_options.c:227 backend/plustek.c:1078
 #, no-c-format
 msgid "Buttons"
 msgstr "Botóns"
 
-#: backend/genesys/genesys.cpp:4982 backend/gt68xx.c:785
+#: backend/genesys/genesys.cpp:5010 backend/gt68xx.c:785
 #: backend/hp-option.h:92 backend/hp5400_sane.c:535 backend/niash.c:723
 #: backend/p5.c:1945 backend/plustek.c:939
 #, no-c-format
 msgid "Calibrate"
 msgstr "Calibrar"
 
-#: backend/genesys/genesys.cpp:4984 backend/gt68xx.c:787 backend/p5.c:1947
+#: backend/genesys/genesys.cpp:5012 backend/gt68xx.c:787 backend/p5.c:1947
 #, no-c-format
 msgid "Start calibration using special sheet"
 msgstr "Iniciar a calibración usando unha folla especial"
 
-#: backend/genesys/genesys.cpp:4996 backend/gt68xx.c:800 backend/p5.c:1958
+#: backend/genesys/genesys.cpp:5024 backend/gt68xx.c:800 backend/p5.c:1958
 #, no-c-format
 msgid "Clear calibration"
 msgstr "Limpar a calibración"
 
-#: backend/genesys/genesys.cpp:4997 backend/gt68xx.c:801 backend/p5.c:1960
+#: backend/genesys/genesys.cpp:5025 backend/gt68xx.c:801 backend/p5.c:1960
 #, no-c-format
 msgid "Clear calibration cache"
 msgstr "Limpar a caché de datos de calibración"
 
-#: backend/genesys/genesys.cpp:5007
+#: backend/genesys/genesys.cpp:5035
 #, fuzzy, no-c-format
 msgid "Force calibration"
 msgstr "Calibración grosa"
 
-#: backend/genesys/genesys.cpp:5008
+#: backend/genesys/genesys.cpp:5036
 #, no-c-format
 msgid "Force calibration ignoring all and any calibration caches"
 msgstr ""
 
-#: backend/genesys/genesys.cpp:5018
+#: backend/genesys/genesys.cpp:5046
 #, fuzzy, no-c-format
 msgid "Ignore internal offsets"
 msgstr "Desviación verde"
 
-#: backend/genesys/genesys.cpp:5020
+#: backend/genesys/genesys.cpp:5048
 #, no-c-format
 msgid ""
 "Acquires the image including the internal calibration areas of the "

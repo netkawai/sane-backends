@@ -1280,6 +1280,46 @@ pixma_calc_calibrate (pixma_t * p)
     return sp->source == p->last_source ? 0x00 : 0x01;
 }
 
+const char *ccaps [18] __attribute__((visibility("default"))) = {"PIXMA_CAP_EASY_RGB",
+                          "PIXMA_CAP_GRAY",
+                          "PIXMA_CAP_ADF",
+                          "PIXMA_CAP_48BIT",
+                          "PIXMA_CAP_GAMMA_TABLE",
+                          "PIXMA_CAP_EVENTS",
+                          "PIXMA_CAP_TPU",
+                          "PIXMA_CAP_ADFDUP",
+                          "PIXMA_CAP_CIS",
+                          "PIXMA_CAP_CCD",
+                          "PIXMA_CAP_LINEART",
+                          "PIXMA_CAP_NEGATIVE",
+                          "PIXMA_CAP_TPUIR",
+                          "PIXMA_CAP_ADF_WAIT",
+                          "PIXMA_CAP_ADF_JPEG",
+                          "PIXMA_CAP_JPEG",
+                          "PIXMA_CAP_GT_4096",
+                          NULL
+                      };
+
+const unsigned ucaps [18] __attribute__((visibility("default"))) = {PIXMA_CAP_EASY_RGB,
+                             PIXMA_CAP_GRAY,
+                             PIXMA_CAP_ADF,
+                             PIXMA_CAP_48BIT,
+                             PIXMA_CAP_GAMMA_TABLE,
+                             PIXMA_CAP_EVENTS,
+                             PIXMA_CAP_TPU,
+                             PIXMA_CAP_ADFDUP,
+                             PIXMA_CAP_CIS,
+                             PIXMA_CAP_CCD,
+                             PIXMA_CAP_LINEART,
+                             PIXMA_CAP_NEGATIVE,
+                             PIXMA_CAP_TPUIR,
+                             PIXMA_CAP_ADF_WAIT,
+                             PIXMA_CAP_ADF_JPEG,
+                             PIXMA_CAP_JPEG,
+                             PIXMA_CAP_GT_4096,
+                             0
+                      };
+
 #if defined(HAVE_LIBXML2)
 static const char *
 format_xml_response(const char *resp_details)
@@ -1375,43 +1415,4 @@ clean:
   return status;
 }
 
-const char *ccaps [18] = {"PIXMA_CAP_EASY_RGB",
-                          "PIXMA_CAP_GRAY",
-                          "PIXMA_CAP_ADF",
-                          "PIXMA_CAP_48BIT",
-                          "PIXMA_CAP_GAMMA_TABLE",
-                          "PIXMA_CAP_EVENTS",
-                          "PIXMA_CAP_TPU",
-                          "PIXMA_CAP_ADFDUP",
-                          "PIXMA_CAP_CIS",
-                          "PIXMA_CAP_CCD",
-                          "PIXMA_CAP_LINEART",
-                          "PIXMA_CAP_NEGATIVE",
-                          "PIXMA_CAP_TPUIR",
-                          "PIXMA_CAP_ADF_WAIT",
-                          "PIXMA_CAP_ADF_JPEG",
-                          "PIXMA_CAP_JPEG",
-                          "PIXMA_CAP_GT_4096",
-                          NULL
-                      };
-
-const unsigned ucaps [18] = {PIXMA_CAP_EASY_RGB,
-                             PIXMA_CAP_GRAY,
-                             PIXMA_CAP_ADF,
-                             PIXMA_CAP_48BIT,
-                             PIXMA_CAP_GAMMA_TABLE,
-                             PIXMA_CAP_EVENTS,
-                             PIXMA_CAP_TPU,
-                             PIXMA_CAP_ADFDUP,
-                             PIXMA_CAP_CIS,
-                             PIXMA_CAP_CCD,
-                             PIXMA_CAP_LINEART,
-                             PIXMA_CAP_NEGATIVE,
-                             PIXMA_CAP_TPUIR,
-                             PIXMA_CAP_ADF_WAIT,
-                             PIXMA_CAP_ADF_JPEG,
-                             PIXMA_CAP_JPEG,
-                             PIXMA_CAP_GT_4096,
-                             0
-                      };
 #endif

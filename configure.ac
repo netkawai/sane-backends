@@ -60,8 +60,8 @@ LT_PREREQ([2.4.6])
 dnl *****************************************************************
 dnl  Set up I18N/L10N support
 dnl *****************************************************************
-AM_GNU_GETTEXT([external])
-AM_GNU_GETTEXT_VERSION([0.19.8])
+dnl AM_GNU_GETTEXT([external])
+dnl AM_GNU_GETTEXT_VERSION([0.19.8])
 
 dnl ***********************************************************************
 dnl Checks for programs.

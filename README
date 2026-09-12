@@ -1,3 +1,9 @@
+This is my personal fork/modification
+1. Disable NLS
+2. Only use pixma for PIXMA 432
+3. Build on Mac/Linux
+
+
 How to configure, build, and install SANE.
 
 

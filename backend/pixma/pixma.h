@@ -378,8 +378,8 @@ struct pixma_scan_param_t
   unsigned frontend_cancel;
 };
 
-extern const char *ccaps[18];
-extern const unsigned ucaps[18];
+extern const char *ccaps[18] __attribute__((visibility("default")));
+extern const unsigned ucaps[18] __attribute__((visibility("default")));
 
 /** PIXMA model information */
 struct pixma_config_t
