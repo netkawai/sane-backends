@@ -1,21 +1,21 @@
 tar xvfz m4-1.4.19.tar.gz
 cd ./m4-1.4.19
-./configure --prefix=/Users/kawai/.local --disable-nls
+./configure --prefix=$HOME/.local --disable-nls
 make & make install
 cd ..
 tar xvfz autoconf-2.72.tar.gz
 cd ./autoconf-2.72
-./configure --prefix=/Users/kawai/.local
+./configure --prefix=$HOME/.local
 make & make install
 cd ..
 tar xvfz automake-1.16.5.tar.gz
 cd ./automake-1.16.5
-./configure --prefix=/Users/kawai/.local
+./configure --prefix=$HOME/.local
 make & make install
 cd ..
 tar xvfz libtool-2.4.7.tar.gz
 cd ./libtool-2.4.7
-./configure --prefix=/Users/kawai/.local
+./configure --prefix=$HOME/.local
 make & make install
 cd ..
 tar xvfJ autoconf-archive-2024.10.16.tar.xz
@@ -24,19 +24,19 @@ make & make install
 cd ..
 tar xvfJ pkgconf-2.3.0.tar.xz
 cd ./pkgconf-2.3.0
-./configure --prefix=/Users/kawai/.local --disable-nls
+./configure --prefix=$HOME/.local --disable-nls
 make & make install
-ln -s /Users/kawai/.local/bin/pkgconf /Users/kawai/.local/bin/pkg-config
-ln -s /Users/kawai/.local/share/man/man1/pkgconf.1 /Users/kawai/.local/share/man/man1/pkg-config.1
+ln -s $HOME/.local/bin/pkgconf $HOME/.local/bin/pkg-config
+ln -s $HOME/.local/share/man/man1/pkgconf.1 $HOME/.local/share/man/man1/pkg-config.1
 cd ..
 tar xvfz jpegsrc.v9f.tar.gz
 cd ./jpeg-9f	
-./configure --prefix=/Users/kawai/.local
+./configure --prefix=$HOME/.local
 make & make install
 cd ..
 tar xvfz libpng-1.6.58.tar.gz
 cd ./libpng-1.6.58
-./configure --prefix=/Users/kawai/.local
+./configure --prefix=$HOME/.local
 make & make install
 cd ..
 
@@ -50,18 +50,19 @@ printf "g/AM_GNU_GETTEXT/s/^/dnl /\nw\nq\n" | ed -s configure.ac
 git clean -fdx
 
 
+# create dummy po folder and dummy file
 mkdir -p po
-cp /Users/kawai/.local/share/automake-1.16/COPYING po/Makefile.in.in
+cp $HOME/.local/share/automake-1.16/COPYING po/Makefile.in.in
 
-# 2. Re-run your low-level layout compilers in structural order
-/Users/kawai/.local/bin/aclocal --force -I m4 -I /Users/kawai/.local/share/aclocal
-/Users/kawai/.local/bin/libtoolize --copy --force
-/Users/kawai/.local/bin/autoheader --force
-/Users/kawai/.local/bin/autoconf --force
-/Users/kawai/.local/bin/automake --add-missing --copy --force-missing
+# 2. Run your low-level layout compilers in structural order
+$HOME/.local/bin/aclocal --force -I m4 -I $HOME/.local/share/aclocal
+$HOME/.local/bin/libtoolize --copy --force
+$HOME/.local/bin/autoheader --force
+$HOME/.local/bin/autoconf --force
+$HOME/.local/bin/automake --add-missing --copy --force-missing
 
 
-./configure --prefix=/Users/kawai/.local \
+./configure --prefix=$HOME/.local \
             --disable-nls \
             --enable-network \
             CPPFLAGS="-I/Users/kawai/.local/include" \

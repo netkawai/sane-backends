@@ -62,3 +62,6 @@ test-suite.log
 # editor temp files
 *~
 \#*\#
+
+# for Mac
+.DS_Store
